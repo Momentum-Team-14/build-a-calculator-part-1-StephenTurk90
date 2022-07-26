@@ -11,27 +11,38 @@ div {
 
 .row {
     top: 0;
+    font-family: "Open-Sans";
     display: flex;
     align-content: flex-start;
     justify-content: flex-start;
-    column-gap: 1em;
-    margin: 1rem;
+    column-gap: 1px;
+    margin: 1px;
     margin-bottom: 0;
 }
 
 .answer {
+    top: 0;
+    font-family: "Open-Sans";
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    column-gap: 1px;
+    margin: 1px;
+    margin-bottom: 0;
     background: #61B34F;
     color: white;
 }
 
 .button {
+    font-family: "Open-Sans";
     background: #61B34F;
     color: white;
     padding: 2rem
 }
 
 .right-button {
+    font-family: "Open-Sans";
     background: #82C276;
-    color: black;
+    color: #43633A;
     padding: 2rem;
 }
