@@ -20,18 +20,18 @@ div {
 }
 
 .answer {
-    background: green;
+    background: #61B34F;
     color: white;
 }
 
 .button {
-    background: green;
+    background: #61B34F;
     color: white;
     padding: 2rem
 }
 
 .right-button {
-    background: lightgreen;
+    background: #82C276;
     color: black;
     padding: 2rem;
 }
