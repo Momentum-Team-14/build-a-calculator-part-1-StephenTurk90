@@ -27,9 +27,11 @@ div {
 .button {
     background: green;
     color: white;
+    padding: 2rem
 }
 
 .right-button {
     background: lightgreen;
     color: black;
+    padding: 2rem;
 }
