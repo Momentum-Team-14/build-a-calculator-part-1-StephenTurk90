@@ -1,5 +1,4 @@
 body {
-    background-color: gray;
     display: center;
     font-family: "Open-Sans";
     font-size: 24pt;
@@ -8,7 +7,6 @@ body {
 div {
     font-family: "Open-Sans";
     display: flex;
-    border: red;
 }
 
 .row {
@@ -19,5 +17,19 @@ div {
     column-gap: 1em;
     margin: 1rem;
     margin-bottom: 0;
-    background-color: green;
+}
+
+.answer {
+    background: green;
+    color: white;
+}
+
+.button {
+    background: green;
+    color: white;
+}
+
+.right-button {
+    background: lightgreen;
+    color: black;
 }
