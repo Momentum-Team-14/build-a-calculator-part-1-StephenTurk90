@@ -27,7 +27,6 @@ div {
 .button {
     background: #61B34F;
     color: white;
-    align-content: center;
     justify-content: center;
     padding: 20px;
     width: 30px;
@@ -40,3 +39,4 @@ div {
     padding: 20px;
     width: 30px;
 }
+
