@@ -18,7 +18,7 @@ input,
 textarea,
 button {
   border: 0;
-  /* this reduces the button boarder */
+  /* this reduces the button border */
   border-radius: 0;
   background-color: transparent;
   font-size: inherit;
