@@ -10,7 +10,6 @@ div {
 .row {
     top: 0;
     display: flex;
-    align-content: center;
     justify-content: center;
     column-gap: 1px;
     margin: 1px;
@@ -18,9 +17,7 @@ div {
 
 .answer {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+    justify-content: flex-end;
     background: #61B34F;
     color: white;
     padding: 20px;
@@ -32,7 +29,6 @@ div {
     color: white;
     align-content: center;
     justify-content: center;
-    justify-items: center;
     padding: 20px;
     width: 30px;
 }
@@ -40,9 +36,7 @@ div {
 .right-button {
     background: #82C276;
     color: #43633A;
-    align-content: center;
     justify-content: center;
-    justify-items: center;
     padding: 20px;
     width: 30px;
 }
