@@ -1,42 +1,122 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* universal selectors */
+
 body {
-    font-size: 20pt;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  margin: 0;
+}
+/* aligns the calculator */
+
+/* 
+ * Completely resets form items
+ * ----------------------------
+ * Super hard reset that removes all borders
+ * and radiuses of all form items (including
+ * checkboxes and radios)
+ */
+
+input,
+textarea,
+button {
+  border: 0;
+  /* this reduces the button boarder */
+  border-radius: 0;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  appearance: none;
+  text-align: left;
 }
 
-div {
-    display: flex;
+:root {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.row {
-    top: 0;
-    display: flex;
-    justify-content: center;
-    column-gap: 1px;
-    margin: 1px;
+html {
+  font-size: 175%;
+  /* fully adjusts the size of calculator */
+  font-weight: 300;
+  line-height: 1.2;
 }
 
-.answer {
-    display: flex;
-    justify-content: flex-end;
-    background: #61B34F;
-    color: white;
-    padding: 20px;
-    width: 172px;
+body {
+  align-items: center;
+  background-image: linear-gradient(236deg, #1d2e91d7, #465287); 
+  /* changes the background color */
+  display: flex;
+  /* makes calculator centered */
+  height: 100vh;
+  justify-content: center;
 }
 
-.button {
-    background: #61B34F;
-    color: white;
-    justify-content: center;
-    padding: 20px;
-    width: 30px;
+.container {
+  max-width: 20em;
 }
 
-.right-button {
-    background: #82C276;
-    color: #43633A;
-    justify-content: center;
-    padding: 20px;
-    width: 30px;
+.calculator {
+  /* border-radius: 20px; */
+  box-shadow: 0 0 40px 0px rgba(26, 77, 16, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  max-width: 15em;
+  overflow: hidden;
 }
 
+.calculator-display {
+  background-color: #61B34F;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+.calculator-keys {
+  background-color: #76dc5f;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator-keys > * {
+  background-color: #61B34F;
+  color: white;
+  padding: 0.5em 0.75em;
+/* makes the calculator icons more square */
+  position: relative;
+  text-align: center;
+}
+
+.calculator-keys > *:active::before,
+.calculator-keys > .is-depressed::before {
+  background-color: rgba(26, 77, 16, 0.5);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(26, 77, 16, 0.5) inset;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.key-operator {
+  background-color: #82C276;
+  color: #639A59;
+}
+
+.key-equal {
+  background-color: #61B34F;
+  color: white;
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}

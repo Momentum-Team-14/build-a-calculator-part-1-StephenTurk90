@@ -7,85 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Document</title>
-
 </head>
 
 <body>
 
-    <div class="row">
-        <button class="button"> C </button>
-        <!-- clear / reset button -->
-
-        <div class="answer"> 000000000 </div>
-        <!-- answers go in this box, it is not a button -->
-
-    </div>
-<!--End of First row -->
-    
-    <div class="row">
-        <button class="button" id="number"> 7 </button>
-        <!-- button for 7 -->
-
-        <button class= "button" id="number"> 8 </button>
-        <!-- button for 8 -->
-
-        <button class="button" id="number"> 9 </button>
-        <!-- button for 9 -->
-
-        <button class="right-button" class="divide"> / </button>
-        <!-- right side button for "divide operator" -->
-
-    </div>
-<!--End of second row -->
-
-    <div class="row">
-        <button class="button" id="number"> 4 </button>
-        <!-- Number 4 button -->
-
-        <button class="button" id="number"> 5 </button>
-        <!-- Number 5 button -->
-
-        <button class="button" id="number"> 6 </button>
-        <!-- Number 6 button -->
-    
-        <button class="right-button" class="multiply"> X </button>
-        <!-- right side button for "multiply operator" -->
-        
-    </div>
-<!-- End of third row -->
-
-    <div class="row">
-        <button class="button" id="number"> 1 </button>
-        <!-- Number 1 button -->
-
-        <button class="button" id="number"> 2 </button>
-        <!-- Number 2 button -->
-
-        <button class="button" id="number"> 3 </button>
-        <!-- Number 1 button -->
-
-        <button class="right-button" class="subtract"> - </button>
-        <!-- right side button for "subtract operator" -->
-
-    </div>
-<!-- End of third row -->
-    
-    <div class="row">
-
-    <button class="button" class="number"> 0 </button>
-    <!-- button for 0 -->
-
-    <button class="button" class="decimal"> . </button>
-    <!-- button for decimal -->
-
-    <button class="button" class="equals"> = </button>
-    <!-- button for "equals" -->
-
-    <button class="right-button" class="addition"> + </button>
-    <!-- right side button for "addition operator" -->
-
-    </div>
-<!-- End of final row -->
+    <div class="container">
+        <div class="calculator">
+        <div class="calculator-display">0</div>
+        <div class="calculator-keys">
+            <button class="key-equal" data-action="calculate">=</button>
+            <button class="key-operator" data-action="divide">÷</button>
+            <button class="key-operator" data-action="multiply">&times;</button>
+            <button class="key-operator" data-action="subtract">-</button>
+            <button class="key-operator" data-action="add">+</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">C</button>
+          </div>
+        </div>
+      </div>
     
 </body>
 </html>
