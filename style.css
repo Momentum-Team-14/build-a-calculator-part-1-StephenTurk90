@@ -13,11 +13,6 @@ body {
 }
 
 
-a:focus {
-  outline: none;
-}
-
-
 input,
 textarea,
 button {
@@ -31,6 +26,8 @@ button {
   appearance: none;
   text-align: left;
 }
+/* make calculator look modern */
+
 
 input:hover,
 input:active,
@@ -61,6 +58,7 @@ body {
   height: 100vh;
   justify-content: center;
 }
+/* this code make the calculator center in the browser and has a background */
 
 .container {
   max-width: 20em;
