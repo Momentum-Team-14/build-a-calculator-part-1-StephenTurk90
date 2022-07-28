@@ -16,6 +16,14 @@ let minusKey = document.querySelector('.minus');
 let addKey = document.querySelector('.addition');
 let decimalButton = document.querySelector('.decimal');
 let equalKey = document.querySelector('.key-equal');
+let decimalKey = document.querySelector('.decimal');
+let clearKey = document.querySelector('.clearKey');
+
+// 
+
+let display = document.querySelector(".calculator-display");
+let buttons = document.querySelectorAll(".button");
+let answerCompute = document.querySelectorAll(".key-equal");
 
 // number buttons 0-9, operator keys
 
@@ -90,6 +98,26 @@ addKey.addEventListener('click', function(){
 // addition key console log
 
 equalKey.addEventListener('click', function(){
-    console.log('=')
+    console.log('=');
+    answerCompute()
 })
 // equal key console log
+
+clearKey.addEventListener('click', function(){
+    console.log('clear')
+})
+// clear key console log
+
+for (let button of buttons) {
+  button.addEventListener ("click", () => {
+    display.innerText += button.innerText
+  })
+}
+
+clearKey.addEventListener ('click',  () => {
+    display.innerText = ""
+  })
+
+answerCompute.addEventListener ('click', function() {
+    display.innerText = eval(display.innerText)
+  })
