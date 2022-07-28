@@ -10,6 +10,14 @@ let sixButton = document.querySelector('.number6');
 let sevenButton = document.querySelector('.number7');
 let eightButton = document.querySelector('.number8');
 let nineButton = document.querySelector('.number9');
+let divideKey = document.querySelector('.divide');
+let multiplyKey = document.querySelector('.multiply');
+let minusKey = document.querySelector('.minus');
+let addKey = document.querySelector('.addition');
+let decimalButton = document.querySelector('.decimal');
+let equalKey = document.querySelector('.key-equal');
+
+// number buttons 0-9, operator keys
 
 zeroButton.addEventListener('click', function() {
     console.log('0')
@@ -59,3 +67,29 @@ eightButton.addEventListener('click', function() {
 nineButton.addEventListener('click', function(){
     console.log('9')
 })
+// 9 button console log
+
+divideKey.addEventListener('click', function(){
+    console.log('/')
+})
+// division key console log
+
+multiplyKey.addEventListener('click', function(){
+    console.log('*')
+})
+// multiplay key console log
+
+minusKey.addEventListener('click', function(){
+    console.log('-')
+})
+// subtraction key console log
+
+addKey.addEventListener('click', function(){
+    console.log('+')
+})
+// addition key console log
+
+equalKey.addEventListener('click', function(){
+    console.log('=')
+})
+// equal key console log
