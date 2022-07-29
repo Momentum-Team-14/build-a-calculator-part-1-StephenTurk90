@@ -10,22 +10,21 @@ let sixButton = document.querySelector('.number6');
 let sevenButton = document.querySelector('.number7');
 let eightButton = document.querySelector('.number8');
 let nineButton = document.querySelector('.number9');
-let divideKey = document.querySelector('.divide');
-let multiplyKey = document.querySelector('.multiply');
+let divideKey = document.querySelector('.divi');
+let multiplyKey = document.querySelector('.multi');
 let minusKey = document.querySelector('.minus');
 let addKey = document.querySelector('.addition');
 let decimalButton = document.querySelector('.decimal');
 let equalKey = document.querySelector('.key-equal');
-let decimalKey = document.querySelector('.decimal');
 let clearKey = document.querySelector('.clearKey');
 
-// 
+// number buttons 0-9, operator keys
 
 let display = document.querySelector(".calculator-display");
 let buttons = document.querySelectorAll(".button");
 let answerCompute = document.querySelector(".key-equal");
 
-// number buttons 0-9, operator keys
+// this code allows me to add or substract
 
 zeroButton.addEventListener('click', function() {
     console.log('0')
@@ -97,10 +96,7 @@ addKey.addEventListener('click', function(){
 })
 // addition key console log
 
-// equalKey.addEventListener('click', function(){
-//     console.log('=')
-// })
-// // equal key console log
+// not there is no equal key console log, having it as console log this makes the calculator stop working
 
 clearKey.addEventListener('click', function(){
     console.log('clear')
@@ -117,7 +113,11 @@ clearKey.addEventListener ('click',  () => {
     display.innerText = ""
 })
 
+// this makes the calculator clear button work
+
 answerCompute.addEventListener ('click', function() {
     console.log(display.innerText)
-    display.innerText = eval(display.innerText)
+    display.innerText = eval[display.innerText]
   })
+
+// this makes the calculator work for adding and subtracting numbers
