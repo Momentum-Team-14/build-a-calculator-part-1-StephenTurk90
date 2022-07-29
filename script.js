@@ -23,7 +23,7 @@ let clearKey = document.querySelector('.clearKey');
 
 let display = document.querySelector(".calculator-display");
 let buttons = document.querySelectorAll(".button");
-let answerCompute = document.querySelectorAll(".key-equal");
+let answerCompute = document.querySelector(".key-equal");
 
 // number buttons 0-9, operator keys
 
@@ -97,11 +97,10 @@ addKey.addEventListener('click', function(){
 })
 // addition key console log
 
-equalKey.addEventListener('click', function(){
-    console.log('=');
-    answerCompute()
-})
-// equal key console log
+// equalKey.addEventListener('click', function(){
+//     console.log('=')
+// })
+// // equal key console log
 
 clearKey.addEventListener('click', function(){
     console.log('clear')
@@ -109,15 +108,16 @@ clearKey.addEventListener('click', function(){
 // clear key console log
 
 for (let button of buttons) {
-  button.addEventListener ("click", () => {
-    display.innerText += button.innerText
-  })
+    button.addEventListener ("click", () => {
+        display.innerText += button.innerText
+    })
 }
 
 clearKey.addEventListener ('click',  () => {
     display.innerText = ""
-  })
+})
 
 answerCompute.addEventListener ('click', function() {
+    console.log(display.innerText)
     display.innerText = eval(display.innerText)
   })
