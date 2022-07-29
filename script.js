@@ -117,7 +117,7 @@ clearKey.addEventListener ('click',  () => {
 
 answerCompute.addEventListener ('click', function() {
     console.log(display.innerText)
-    display.innerText = eval[display.innerText]
+    display.innerText = eval(display.innerText)
   })
 
-// this makes the calculator work for adding and subtracting numbers
+// this makes the calculator work for adding and subtracting numbers but not multiplication when using &times; or ÷
